@@ -11,9 +11,9 @@ contact: row
     </section>
 </header>
 
-<main class="">
+<main class="flx-column-centertop">
 {% for post in site.posts %}
-<div id="{{ post.title }}_container" class="">
+<div id="{{ post.title }}_container" class="bt-solid btw-2 wmx-90 tx-lw-small tx-lh-small">
     <div id="{{ post.title }}_content" class="ph-1 a-link" style="">
         <h4 class="">{{ post.title | upcase }}</h4>
         <h5 class="">{{ post.date | date: '%B %d %Y' }}</h5>
