@@ -1,0 +1,14 @@
+<nav id="main_nav" class="z-3 pos-abs flx-row-centertop pv-1 w-full">
+    <div id="navbar_left" class="flx-column-lefttop flx-self-start pl-1 mr-auto">
+    {% for item in site.data.site_menu-left %}
+    <a href="{{ item.link }}" class="pv-05 txc-gry90 tx-dec-none txh-dec-line">{{ item.name | upcase }}
+    </a>
+    {% endfor %}
+    </div>
+    <div id="navbar_right" class="flx-column-righttop flx-self-start pr-1">
+    {% for item in site.data.site_menu-right %}
+    <a href="{{ item.link }}" class="pv-05 txc-gry90 tx-dec-none txh-dec-line">{{ item.name | upcase }}
+    </a>
+    {% endfor %}
+    </div>
+</nav>

@@ -1,0 +1,19 @@
+<footer id="contact" class="bt-solid btw-2 pa-2 txc-gry90" style="background-image:url()";>
+  <div class="">
+    <h4 class="">CONTACT</h4>
+{% capture contact_section %}
+  {% include contact.md %}
+{% endcapture %}
+{{ contact_section | markdownify }}
+  </div>
+  
+<div class="flx-{{ page.contact }}-centertop ">
+{% for item in site.data.contact_links %}
+  <a class="txc-gry90 tx-dec-none txh-dec-line" href="{{ item.link }}">
+    <figure><img src="{{ item.src }}" alt="{{ item.alt }}" class="h-10" />
+    <figcaption class="">{{ item.name }}</figcaption>
+    </figure>
+  </a>
+{% endfor %}
+  
+</footer>

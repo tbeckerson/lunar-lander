@@ -1,0 +1,25 @@
+---
+layout: main
+title: Lunar Linux - News
+contact: row
+---
+
+{% include navbar.html %}
+<header id="news" class="pos-rel pt-10">
+    <section id="title card" class="h-25 flx-column-centercenter" style="background-image:url();">
+        <h1 class="">NEWS</h1>
+    </section>
+</header>
+
+<main class="">
+{% for post in site.posts %}
+<div id="{{ post.title }}_container" class="">
+    <div id="{{ post.title }}_content" class="ph-1 a-link" style="">
+        <h4 class="">{{ post.title | upcase }}</h4>
+        <h5 class="">{{ post.date | date: '%B %d %Y' }}</h5>
+      {{ post }}
+     </div>
+</div>
+{% endfor %}
+</main>
+{% include_relative contact.html %}

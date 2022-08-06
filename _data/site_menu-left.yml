@@ -1,0 +1,8 @@
+- name: HOME
+  link: "https://lunar-linux.org/"
+
+- name: ABOUT
+  link: "#about"
+  
+- name: CONTACT
+  link: "#contact"

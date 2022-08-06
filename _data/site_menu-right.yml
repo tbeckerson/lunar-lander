@@ -1,0 +1,9 @@
+- name: News
+  link: news.html
+
+- name: GITHUB
+  link: https://github.com/lunar-linux
+  
+- name: DOCUMENTATION
+  link: https://wiki.lunar-linux.org/Lunar_Linux
+  
